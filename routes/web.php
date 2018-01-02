@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('dev')->group(function () {
+	Route::get('/', function () {
+    	return view('admin.login');
+	});
+});
