@@ -19,4 +19,8 @@ Route::prefix('dev')->group(function () {
 	Route::get('/', function () {
     	return view('admin.login');
 	});
+
+	Route::get('/dashboard',function(){
+		return view('master.masterdev');
+	});
 });

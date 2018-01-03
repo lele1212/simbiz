@@ -17,6 +17,7 @@ class CreateUserpersTable extends Migration
             $table->string('username',20)->primary();
             $table->string('password');
             $table->string('hakakses');
+            $table->date('masaaktif');
             $table->integer('status')->default(1);
             $table->timestamps();
         });
