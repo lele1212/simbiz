@@ -21,6 +21,6 @@ Route::prefix('dev')->group(function () {
 	});
 
 	Route::get('/dashboard',function(){
-		return view('master.masterdev');
+		return view('admin.dashboard');
 	});
 });
