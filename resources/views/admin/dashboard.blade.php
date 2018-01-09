@@ -8,6 +8,10 @@
 
 @endsection
 
+@section('pagemenu')
+	@include('admin.menu.menudashboard')
+@endsection
+
 @section('content')
 	<div class='ui container grid'>
 		<div class='column'>

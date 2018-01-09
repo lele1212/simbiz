@@ -23,4 +23,12 @@ Route::prefix('dev')->group(function () {
 	Route::get('/dashboard',function(){
 		return view('admin.dashboard');
 	});
+
+	Route::get('/pelanggan',function(){
+		return view('admin.listpelanggan');
+	});
+
+	Route::get('/pelangganbaru',function(){
+		return view('admin.pelangganbaru');
+	});
 });

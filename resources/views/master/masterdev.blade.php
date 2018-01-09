@@ -46,24 +46,19 @@
 				<i class='list icon'></i>
 				Laporan
 			</a>
+			<div class='right menu'>
+				<a class='item'>
+					<i class='sign out icon'></i>
+					Keluar
+				</a>
+			</div>
 		</div>
 		<div class='ui vertical fixed inverted currentpage menu'>
-			<a class='item'>
-				<i class='user icon'></i>
-				Pelanggan
-			</a>
-			<a class='item'>
-				<i class='list icon'></i>
-				Laporan
-			</a>
+			@yield('pagemenu')
 		</div>
 		<div class='main content'>
 			@yield('content')
-			<div class='ui container grid'>
-				<div class='column'>
-					<h1 class='ui dividing header'>Dashboard</h1>
-				</div>
-			</div>
+			
 		</div>
 	</body>
 </html>
